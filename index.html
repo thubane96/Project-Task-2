@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Project Task 2</title>
+  <link rel="icon" href="assets/favicon.ico">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Charts -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="border-end" id="sidebar-wrapper">
+      <ul class="nav flex-column">
+        <li id="img-logo">
+          <a class="navbar-brand" href="#">
+            <img src="assets/wyblo-logo.svg" alt="" width="204px" height="86px">
+          </a>
+        </li>
+        <div id="options">
+          <li class="nav-item">
+            <a id="btn" class="btn nav-link" href="#">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a id="btn" class="btn nav-link" href="#">Dashboards</a>
+          </li>
+          <li class="nav-item">
+            <a id="btn" class="btn nav-link" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a id="btn" class="btn nav-link" href="#">CRM</a>
+          </li>
+          <li class="nav-item">
+            <a id="btn" class="btn nav-link" href="#">Survey</a>
+          </li>
+          <li class="nav-item">
+            <a id="btn" class="btn nav-link" href="#">Certificates</a>
+          </li>
+          <div id="blw-btn">
+            <li class="nav-item">
+              <a id="btn" class="btn nav-link" href="#">Settings</a>
+            </li>
+            <li class="nav-item">
+              <a id="logout-btn" class="btn nav-link" href="#">Logout</a>
+            </li>
+          </div>
+          <div id="sidebar-footer">
+            <table>
+              <tr>
+                <td><a id="sidebar-footer-link" href="#">Updates</a></td>
+                <td style="padding-left: 47px;"><a id="sidebar-footer-link" href="#">ersion 1.0</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+      <!-- Top navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="">
+          <button style="margin-left: 12px;" class="btn btn-success" id="sidebarToggle">Menu</button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+        </div>
+      </nav>
+      <!-- Page content-->
+      <div style="margin-bottom: 80px;" class="container-fluid">
+        <div id="header">
+          <h1>Overview</h1>
+          <button style="background: #7F8DD7; position:absolute; right: 0;" type="button" class="btn" name="button">+ Add Course</button>
+        </div>
+        <div id="tab-view" class="row">
+          <div id="tab" class="col-lg-3 col-md-3 rounded-pill border">
+            <h4>12<br>Comming Sessions</h4>
+          </div>
+          <div id="tab" style="margin-left: 45px;" class="col-lg-3 col-md-3 rounded-pill border">
+            <h4>80<br>N'Registrants</h4>
+          </div>
+          <div id="tab" style="margin-left: 45px;" class="col-lg-3 col-md-3 rounded-pill border">
+            <h4>65<br>N'Attendees</h4>
+          </div>
+          <div id="tab" style="margin-left: 45px;" class="col-lg-3 col-md-3 rounded-pill border">
+            <h4>15<br>N'Organizations</h4>
+          </div>
+          <div id="tab" style="margin-left: 45px;" class="col-lg-3 col-md-3 rounded-pill border">
+            <h4>8<br>N'Trainers</h4>
+          </div>
+        </div>
+
+        <div  class="row">
+          <div style="padding-top: 59px; padding-left: 63px;" class="col-lg-4">
+            <div class="rounded border" style="width: 500px; height: 242px;" id="curve_chart" ></div>
+          </div>
+          <div id="graphs"  class="col-lg-4 rounded">
+            <div class="rounded border"  id="chart_div"></div>
+          </div>
+          <div id="graphs" style="padding-left: 165px;" class="col-lg-4 rounded">
+            <div class="rounded border" id="columnchart_material"></div>
+          </div>
+        </div>
+
+        <div style="padding-top: 59px;padding-left: 57px;" class="row">
+            <div style="width: 717px;" class="col-lg-8">
+              <table>
+                <tr>
+                  <td>  <div id="regions_div" ></div></td>
+                  <td> <div id="top_x_div" style="width: 250px; height: 323px;"> </div></td>
+                </tr>
+              </table>
+            </div>
+            <div style="width:815px; height: 333px;margin-left: 10px;" class="col-lg-4 ScrollStyle">
+              <h6>Recent comments</h6>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed neque sem. Sed viverra nulla et ante efficitur, nec hendrerit lorem</p>
+              <p style="background:grey;"> Mauris bibendum odio id aliquam mollis. Maecenas vel massa suscipit, imperdiet risus quis, dictum neque.</p>
+              <p>Duis elementum bibendum libero, vitae lobortis lectus sagittis ac.</p>
+              <p style="background:grey;">Phasellus enim magna, posuere vel turpis sit amet, eleifend dapibus nibh. Suspendisse in lorem ante.</p>
+              <p>Quisque tristique convallis nunc, at auctor tellus. Aliquam at sapien vel lectus laoreet facilisis in nec tellus. Vivamus ac vestibulum nisl, nec placerat felis.</p>
+              <p style="background:grey;">Quisque vulputate accumsan lorem, sed sagittis mauris ultrices eget. Mauris enim odio, posuere sed bibendum nec, suscipit a nisi. Vestibulum id sapien sed lectus egestas consectetur ac vitae augue.</p>
+              <p>Nulla interdum sapien ut facilisis vulputate. Maecenas ac dui augue. Donec cursus dapibus est, non pulvinar urna finibus id.</p>
+              <p style="background:grey;">Etiam ac aliquam libero, vel laoreet ipsum. Vestibulum rhoncus velit cursus dolor molestie, euismod dignissim tellus tincidunt.</p>
+              <p>Etiam ac aliquam libero, vel laoreet ipsum. Vestibulum rhoncus velit cursus dolor molestie, euismod dignissim tellus tincidunt. Curabitur venenatis urna accumsan mauris vehicula, quis porta turpis ultricies. Sed congue vitae metus quis gravida. Donec vel enim vitae lectus feugiat mattis eu quis diam.</p>
+              <p style="background:grey;">Morbi vitae turpis ullamcorper, elementum purus a, laoreet velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum id fringilla urna. Ut ornare consequat dui, et placerat ipsum placerat a. Vivamus sit amet eros in lectus interdum faucibus id sit amet ante. Maecenas suscipit velit sed scelerisque posuere.</p>
+            </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
